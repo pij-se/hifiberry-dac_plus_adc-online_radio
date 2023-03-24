@@ -51,7 +51,7 @@ Once your Raspberry Pi is connected to your network you are ready to run the scr
 
 Below is a step-by-step guide on each task performed by the script. I only added them to explain in-depth what the script actually does, in case you are interested, or as a help in case the script fails for any reason. To download and execute the script, simply type the following and hit Enter after each line:
 ```
-$ wget https://github.com/pij-se/hifiberry-dac_plus_adc-online_radio/blob/main/setup.sh
+$ wget https://raw.githubusercontent.com/pij-se/hifiberry-dac_plus_adc-online_radio/main/setup.sh
 $ chmod +x ./setup.sh
 $ ./setup.sh
 ```
