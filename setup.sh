@@ -10,7 +10,7 @@
 echo "Checking for updates..."
 sudo apt update
 echo "Downloading and installing updates..."
-sudo apt upgrade
+sudo apt upgrade -y
 
 # Install and configure Icecast2
 echo "Installing Icecast2..."
