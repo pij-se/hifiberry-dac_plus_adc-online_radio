@@ -1,0 +1,10 @@
+[Unit]
+Description=Darkice
+Wants=network-online.target icecast2.service
+After=network-online.target icecast2.service
+
+[Service]
+ExecStart=/usr/local/bin/darkice
+
+[Install]
+WantedBy=multi-user.target
