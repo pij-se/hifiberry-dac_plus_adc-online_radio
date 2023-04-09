@@ -33,7 +33,7 @@ The shell script in this repository will download, compile, install, and configu
 
 I recommend that you download and flash [Raspberry Pi OS Lite (2023-03-24)](https://www.raspberrypi.com/software/operating-systems/) to your Raspberry Pi SD memory card. This is the version without the desktop, and at least for me, this is the preferable choice since the Raspberry Pi OS with a desktop does not offer any added value given that the device will, once set up, run headless (without a monitor). Contrary, the desktop version will presumably use more system resources, which most likely means that your Raspberry Pi will run hotter and consume more energy, it also uses more space on the SD memory card.
 
-There are various tools you can use to flash the operating system to the SD card, I refer to the documentation on Raspberry Pi's website and elsewhere [on the web](https://letmegooglethat.com/?q=how+to+flash+raspberry+pi+os+to+an+sd+card).
+There are various tools you can use to flash the operating system to the SD card, I refer to the documentation on Raspberry Pi's website and elsewhere [on the web](https://duckduckgo.com/?q=how+to+flash+raspberry+pi+os+to+an+sd+card).
 
 Once you have successfully started your Raspberry Pi, you need to connect it to your local network. If you wish to use a wired connection it is sufficient to connect the Ethernet cable between the Raspberry Pi and your router. If you prefer a wireless connection, the easiest way is to use the **Raspberry Pi Software Configuration Tool** `raspi-config`, which will guide you through the connection.
 
@@ -68,13 +68,4 @@ To add a radio to Sonos TuneIn using the Sonos S1 app, navigate to **Browse > Tu
 **Done! You can now connect Sonos to your Raspberry Pi!**
 
 ## The script in detail
-First of all, the script will make sure that your Raspberry Pi is up to date with the latest software.
-```
-$ sudo apt update
-$ sudo apt upgrade
-```
-
-Next, the script will download, install, and configure Icecast2.
-```
-$ sudo apt install icecast2
-```
+Please see the script for now.
