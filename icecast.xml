@@ -9,21 +9,18 @@
 		<header-timeout>15</header-timeout>
 		<source-timeout>10</source-timeout>
 		<burst-on-connect>0</burst-on-connect>
-		<burst-size>65535</burst-size>
+		<burst-size>0</burst-size>
 	</limits>
 	<authentication>
-		<source-password>hackme</source-password>
-		<relay-password>hackme</relay-password>
+		<source-password>pleasedonthackme</source-password>
+		<relay-password>pleasedonthackme</relay-password>
 		<admin-user>admin</admin-user>
-		<admin-password>hackme</admin-password>
+		<admin-password>pleasedonthackme</admin-password>
 	</authentication>
 	<hostname>localhost</hostname>
 	<listen-socket>
 		<port>8000</port>
 	</listen-socket>
-	<http-headers>
-		<header name="Access-Control-Allow-Origin" value="*" />
-	</http-headers>
 	<fileserve>0</fileserve>
 	<paths>
 		<logdir>/var/log/icecast2</logdir>
@@ -37,7 +34,6 @@
 		<loglevel>1</loglevel>
 		<logsize>1000</logsize>
 		<logarchive>0</logarchive>
-		<alias source="/" destination="/status.xsl"/>
 	</logging>
 	<security>
 		<chroot>0</chroot>
