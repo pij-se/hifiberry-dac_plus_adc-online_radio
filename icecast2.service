@@ -1,0 +1,12 @@
+[Unit]
+Description=Icecast2
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/icecast2 -b -c /etc/icecast2/icecast.xml
+PIDFile=/var/icecast/icecast.pid
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
