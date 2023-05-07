@@ -12,6 +12,7 @@
 # Determine the platform to find the path to libmp3lame for Darkice.
 case $(uname -m) in *"arm"*) lame=/usr/lib/arm-linux-gnueabihf/ ;; *) ;; esac
 case $(uname -m) in *"x86"*) lame=/usr/lib/x86_64-linux-gnu ;; *) ;; esac
+case $(uname -m) in *"aarch64"*) lame=/usr/lib/aarch64-linux-gnu ;; *) ;; esac
 if [ "$lame" = "" ]; then echo "unable to detect platform, exiting..."; exit 1; fi
 
 # Update the package list and upgrade packages.
@@ -53,6 +54,9 @@ sudo mv ./darkice.cfg /etc/darkice.cfg
 wget https://raw.githubusercontent.com/pij-se/hifiberry-dac_plus_adc-online_radio/main/darkice.service
 sudo mv ./darkice.service /lib/systemd/system/darkice.service
 sudo systemctl enable darkice
+
+#
+echo "Manually edit /boot/config.txt to disable on-board audio and enable HiFiBerry audio"
 
 # Reboot
 echo "rebooting..."
