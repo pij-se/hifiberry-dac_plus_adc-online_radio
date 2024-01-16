@@ -63,10 +63,10 @@ sudo useradd icecast -g audio
 sudo mkdir -p /var/icecast
 sudo chown -R icecast /var/icecast
 sudo chown -R icecast /var/log/icecast2
-wget https://raw.githubusercontent.com/pij-se/hifiberry-dac_plus_adc-online_radio/main/icecast.xml
+wget https://raw.githubusercontent.com/bgannon2/hifiberry-dac_plus_adc-online_radio/main/icecast.xml
 sudo mv /etc/icecast2/icecast.xml /etc/icecast2/icecast.xml.bak
 sudo mv ./icecast.xml /etc/icecast2/icecast.xml
-wget https://raw.githubusercontent.com/pij-se/hifiberry-dac_plus_adc-online_radio/main/icecast2.service
+wget https://raw.githubusercontent.com/bgannon2/hifiberry-dac_plus_adc-online_radio/main/icecast2.service
 sudo mv ./icecast2.service /lib/systemd/system/icecast2.service
 sudo systemctl enable icecast2
 
