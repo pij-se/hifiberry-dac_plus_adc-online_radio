@@ -1,5 +1,7 @@
 # hifiberry-dac_plus_adc-online_radio
-A shell script to set up your Raspberry 4 with HiFiBerry's DAC+ ADC, Icecast2, and Darkice, to create an online radio for streaming audio on your local network (for example from a turntable to Sonos).
+A shell script to set up your Raspberry 4 with HiFiBerry's DAC+ ADC Pro, Icecast2, and Darkice, to create an online radio for streaming audio on your local network (for example from a turntable to Sonos).
+
+This project was forked from https://github.com/pij-se/hifiberry-dac_plus_adc-online_radio to address issues with kernel versions (https://github.com/raspberrypi/linux/issues/5709) and Darkice build issues (https://github.com/titixbrest/darkice/commit/93b8d973d11efaf6799d406230f51b4c49293e5b)
 
 ## Background
 I ended up buying a turntable as a gift to a family member. It turned out that the only sound system she had was a set of Sonos speakers. As you may know, Sonos is not exactly an open system; much like other brands they are keen on keeping their customers within their ecosystem, and so, a seemingly simple task such as connecting an external audio source to your Sonos sound system ends up being rather expensive if you do it the Sonos way.
@@ -51,7 +53,7 @@ Once your Raspberry Pi is connected to your network you are ready to run the scr
 
 Below is a step-by-step guide on each task performed by the script. I only added them to explain in-depth what the script actually does, in case you are interested, or as a help in case the script fails for any reason. To download and execute the script, simply type the following and hit Enter after each line:
 ```
-$ wget https://raw.githubusercontent.com/pij-se/hifiberry-dac_plus_adc-online_radio/main/setup.sh
+$ wget https://raw.githubusercontent.com/bgannon2/hifiberry-dac_plus_adc-online_radio/main/setup.sh
 $ chmod +x ./setup.sh
 $ ./setup.sh
 ```

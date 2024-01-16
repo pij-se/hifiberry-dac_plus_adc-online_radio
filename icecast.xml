@@ -12,10 +12,10 @@
 		<burst-size>0</burst-size>
 	</limits>
 	<authentication>
-		<source-password>pleasedonthackme</source-password>
-		<relay-password>pleasedonthackme</relay-password>
+		<source-password>hackme</source-password>
+		<relay-password>hackme</relay-password>
 		<admin-user>admin</admin-user>
-		<admin-password>pleasedonthackme</admin-password>
+		<admin-password>hackme</admin-password>
 	</authentication>
 	<hostname>localhost</hostname>
 	<listen-socket>
